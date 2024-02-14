@@ -14,15 +14,17 @@
 
         <section class="input-area">
             <input type="text" id="input-tap">
-            <button id="add-button">+</button>
+            <button id="add-button" class="add-button" disabled>
+                <i class="fa-solid fa-plus"></i>
+            </button>
         </section>
 
         <section class="task-area">
-            <div id="under-line"></div>
             <div class="task-taps" >
-                <div>전체</div>
-                <div>진행중</div>
-                <div>완료</div>
+                <div id="tap-underline"></div>
+                <div id="all">전체</div>
+                <div id="ongoing">진행중</div>
+                <div id="done">완료</div>
             </div>     
         <div id="task-board">
             
@@ -30,6 +32,7 @@
         </section>
     </div>
 
+    <script src="https://kit.fontawesome.com/a86c609f7e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

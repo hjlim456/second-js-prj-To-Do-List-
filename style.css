@@ -5,6 +5,16 @@ body{
     background-size: cover;
 }
 
+
+.add-button{
+    background-color: rgb(90, 142, 237);
+    border-radius: 8px;
+}
+.add-button>i{
+    color: black;
+}
+
+
 .container{
     background-color: white;
     min-height: 100vh;
@@ -24,18 +34,63 @@ body{
     padding: 1em;
 
 }
-#under-line{
+#tap-underline{
     border: 1px solid red;
-    height: 4px;
+    height: 6px;
     background-color: aquamarine;
     position: absolute;
-    top: 52px;
-    left: 0;
-    width: 80px;
+    width: 64px;
+    left: 1px;
+    top: 55px;
+    padding: 0;
+    transition: 0.5s;
+
+    
 }
 
 .task{
     display: flex;
     justify-content: space-between;
+}
+
+.task-taps div{
+    cursor: pointer;
+}
+.task-done{
+    width: 100%;
+    text-decoration: line-through;
+    color: #928a8a;
+    font-weight: 100;
+    background-color: rgb(215 222 228);
+    transition: 0.5s;
+}
+.button-box{
+    display: flex;
+    
+}
+.button-box button{
+    border: 0;
+    background-color: white;
+    padding: 1rem;
+}
+
+.button-box button:first-child{
+    color: limegreen;
+}
+
+.button-box button:nth-child(2){
+    color: red;
+    }
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+  }
+.button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+.task-content{
     padding: 1em;
+}
+
+.fa-arrow-rotate-left{
+    color: #928a8a;
 }
