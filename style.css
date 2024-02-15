@@ -1,3 +1,15 @@
+@font-face {
+    font-family: cafe24Eng;
+    src: url(font/Cafe24Decoshadow.ttf);
+}
+@font-face {
+    font-family: cafe24Kor;
+    src: url(font/Cafe24Syongsyong-v2.0.woff2);
+}
+*{
+   font-family: "cafe24Kor";
+}
+
 body{
     margin: 0;
     background-image: url(images/study2.avif);
@@ -6,20 +18,44 @@ body{
 }
 
 
+.input-area{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.input-area>input{
+    margin-right: 0.5rem;
+}
+
 .add-button{
-    background-color: rgb(90, 142, 237);
+    background-color: rgb(235, 60, 241);
     border-radius: 8px;
+    border-style: solid;
+    border-color: rgb(235, 60, 241);
+    display: flex;
+    align-items: center;
 }
 .add-button>i{
-    color: black;
+    padding-top: 1px;
+    color:   #F0F0F0;
+    
+}
+.add-button:disabled{
+    background-color: #b7b5b5;
+    border-color: #b7b5b5;
+}
+.add-button:disabled>i{
+    color: #F0F0F0;
 }
 
 
 .container{
-    background-color: white;
+    background-color: rgb(255,255,255 0.6);
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container>h1{
+    font-family: cafe24Eng;
+}
 
 .task-area{
     position: relative;
@@ -35,13 +71,12 @@ body{
 
 }
 #tap-underline{
-    border: 1px solid red;
-    height: 6px;
-    background-color: aquamarine;
+    height: 4px;
+    background-color: rgb(245, 174, 21, 0.5);
     position: absolute;
-    width: 64px;
+    width: 59px;
     left: 1px;
-    top: 55px;
+    top: 50px;
     padding: 0;
     transition: 0.5s;
 

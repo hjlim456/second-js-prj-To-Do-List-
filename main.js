@@ -41,14 +41,26 @@ userInput.addEventListener('input', function(e) {
 
 
 function addTask() {
+
   let task = {
     id: randomIdGenerate(),
     isComplete: false,
     taskContent: userInput.value,
   };
+  
   taskList.push(task);
+
+  //input탭에 text를 입력햇다가 지운상태로 +버튼을 눌렀을때 조건막기
+  if(task.taskContent ===""){
+    addButton.disabled = true;
+    taskList.pop(task);
+    alert("할일을 입력하세요");
+    return;
+  }
+
+
   userInput.value=""
-  render();
+  render(); 
   addButton.disabled = true;
 
 }
@@ -123,7 +135,7 @@ function filter(e) {
         underline.style.width = e.target.offsetWidth + "px";
         underline.style.left = e.target.offsetLeft + "px";
         underline.style.top =
-        e.target.offsetTop + (e.target.offsetHeight-2) + "px";
+        e.target.offsetTop + (e.target.offsetHeight-7) + "px";
     }
         
 
