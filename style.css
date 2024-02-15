@@ -24,7 +24,19 @@ body{
 }
 .input-area>input{
     margin-right: 0.5rem;
+    margin-top: 3rem;
+    width: 80%;
+
+    border: none;
+    border-bottom: 3px solid lightgray;
+
 }
+.input-area>input:focus{
+    outline: none;
+    border-bottom: 3px solid rgb(235, 60, 241);
+
+}
+  
 
 .add-button{
     background-color: rgb(235, 60, 241);
@@ -33,6 +45,9 @@ body{
     border-color: rgb(235, 60, 241);
     display: flex;
     align-items: center;
+
+    height: 30px;
+    align-self: end;
 }
 .add-button>i{
     padding-top: 1px;
